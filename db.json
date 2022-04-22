@@ -1,0 +1,21 @@
+{
+  "perfil": [
+    {
+      "nombre": "jeiser",
+      "email": "jeser@hotmail.com",
+      "id": "48fd2775-fabf-4d96-affd-0eb6374706f7"
+    },
+    {
+      "nombre": "Leopoldo Gonzalez",
+      "email": "camila@hotmai.com",
+      "password": "Cam1234.",
+      "id": "169c7d7b-cb2e-45e6-b0bc-95f65ccb45ab"
+    },
+    {
+      "nombre": "camila",
+      "email": "camila@hotmai.com",
+      "password": "Cma1234",
+      "id": "853cc57c-f95a-42b1-aed5-646d4e99ab0b"
+    }
+  ]
+}

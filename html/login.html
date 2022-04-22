@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width">
+         <title>Alura Geek</title>
+         <link rel="stylesheet" href="../css/basicos/styleReset.css">
+         <link rel="stylesheet" href="../css/basicos/style_tope.css">
+         <link rel="stylesheet" href="../css/paginas/style_login.css">
+         <link rel="stylesheet" href="../css/componentes/inputs.css">
+         <link rel="stylesheet" href="../css/componentes/botones.css">
+         <link rel="stylesheet" href="../css/variables.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">    
+         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="caja">
+                <img src="../imagenes/control.png" alt=""> 
+                <img src="../imagenes/Alura.png" alt=""> 
+                <img src="../imagenes/Geek.png" alt=""> 
+                <div class="box">
+                    <div class="container-4">
+                      <input type="search" id="search" placeholder="Que desea buscar..." />
+                      <button class="icon"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>         
+        </header>
+
+        <main>
+            <form action="" class="formulario flex flex--column" data-login>
+                <legend class="form__label">Iniciar Sesión</legend>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" 
+                        placeholder="Email" required data-email>
+                        <label class="input-label" for="name">Escriba su correo Electrónico</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="password" id="password" class="input" type="password" 
+                        placeholder="Contraseña" required 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                        title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y NO PUEDE contener caracteres especiales."
+                        data-password>
+                        <label class="input-label" for="password">Contraseña</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <button class="button" id="login" href="login.html?email=">Iniciar Sesión</a>
+            </form>
+        </main>
+        <legend class="form__link">Si no esta resgistrado, haga click <a href="/html/registrarse.html">Aqui!</a></legend>
+        <script type="module" src="../controllers/login-controller.js"></script>
+    <script src="../js/app.js" type="module"></script>
+    </body>
+</html>
