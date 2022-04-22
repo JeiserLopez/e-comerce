@@ -1,0 +1,77 @@
+.footer-prin{
+    display: flex;
+    flex-direction: row;
+    padding: 64px;
+
+    position: static;
+    width: 1440px;
+    height: 368px;
+    left: 0px;
+    top: 0px;
+
+    /* Azul/10% */
+
+    background: var(--secondary-color);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    margin-right: 200px;
+}
+
+.footer-logo{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  
+  position: static;
+  width: 300px;
+  height: 115px;
+  left: 0px;
+  top: 0px;
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+  padding-left: 250px;
+
+}
+
+.links_info{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 176px;
+    height: 9px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: var(--font-family-all);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    /* Preto/100% */
+    
+    color: #464646;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 25px 0px;
+    margin-right: 40px;
+}

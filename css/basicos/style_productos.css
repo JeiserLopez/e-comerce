@@ -1,24 +1,16 @@
 
 
 .productos-title{
+    position: static;
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
-    position: static;
-    width: 1440px;
-    height: 70px;
-    left: 0px;
-    top: 0px;
-    margin-right: 20px;
-}
-
-.text-prod{
-    position: static;
     width: 148px;
     height: 38px;
     left: 0px;
     top: 0px;
 
-    font-family: 'Raleway';
+    font-family: var(--font-family-all);
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -36,7 +28,36 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 61px 0px 8%;
+    margin: 50px 80px;
+    
+}
+
+.text-prod{
+    position: static;
+    width: 148px;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+
+    font-family: var(--font-family-all);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+
+
+    /* Preto/100% */
+
+    color: #464646;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px 0px 8%;
 }
 
 .links1{
@@ -46,7 +67,7 @@
     left: 0px;
     top: 2.5px;
 
-    font-family: 'Raleway';
+    font-family: var(--font-family-all);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -64,7 +85,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 5px 8px 250px 880px;
+    margin: 5px 8px 250px 900px;
 }
 
 .productos-list{
@@ -74,7 +95,7 @@
     padding: 0px;
 
     position: static;
-    width: 1136px;
+    width: 940px;
     height: 190px;
     left: 152px;
     top: 531px;
@@ -85,14 +106,14 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 4px 100px 0px 8%;
+    margin: 4px 100px 0px ;
 }
 
 .img-list{
     padding: 0px 20px 10px 20px;
     position: static;
-    width: 176px;
-    height: 174px;
+    width: 150px;
+    height: 150px;
     left: 0px;
     top: 0px;
 
@@ -107,6 +128,7 @@
 
 .productos-txt
 {
+    
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -124,18 +146,18 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 4px 100px 0px 8%; 
+    margin: 4px 100px 0px 100px; 
 }
 
 .text-pro{
-    padding: 0px 20px 5px 20px;
+   
+    padding: 0px 20px 10px 20px;
     position: static;
-    width: 176px;
-    height: 16px;
+    width: 150px;
+    height: 10px;
     left: 0px;
-    top: 182px;
-
-    font-family: 'Raleway';
+    top: 0px;
+    font-family: var(--font-family-all);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -152,18 +174,18 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-    margin: 8px 0px;
+
 }
 
 .precio-prod{
-    padding: 0px 20px 5px 20px;
+    
+    padding: 0px 20px 10px 20px;
     position: static;
-    width: 176px;
-    height: 19px;
+    width: 150px;
+    height: 10px;
     left: 0px;
-    top: 206px;
-
-    font-family: 'Raleway';
+    top: 0px;
+    font-family: var(--font-family-all);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -182,18 +204,18 @@
     order: 2;
     align-self: stretch;
     flex-grow: 0;
-    margin: 8px 0px;
+   
 }
 
 .link-prod{
-    padding: 0px 20px 4px 20px;
+ 
+    padding: 0px 20px 10px 20px;
     position: static;
-    width: 100px;
-    height: 19px;
+    width: 150px;
+    height: 10px;
     left: 0px;
-    top: 233px;
-
-    font-family: 'Raleway';
+    top: 0px;
+    font-family:var(--font-family-all);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -211,5 +233,9 @@
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin: 8px 0px;
+
+}
+
+.form-contacto{
+    width: 200px;
 }

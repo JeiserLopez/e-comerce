@@ -1,45 +1,43 @@
-
-.text-banner{
+.caja1{
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px;
+
+    position: static;
+    width: var(--width-standard);
+    height: 352px;
+    left: 0px;
+    top: 115px;
+
+    /* imagemhero */
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41%, rgba(0, 0, 0, 0.8) 80%), 
+    url(../../imagenes/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+
+.text-banner{
+    position: static;
     width: 751px;
     height: 61px;
     left: 0px;
     top: 0px;
 
-    font-family: 'Raleway';
+    font-family: var(--font-family-all);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 52px;
     line-height: 61px;
-    /* identical to box height */
-
-
-    /* Preto/branco */
-
-    color: #f5f3f3;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 0px 10px 55px;
-}
-
-.text-banner1{
-    position: static;
-    width: 551px;
-    height: 26px;
-    left: 0px;
-    top: 0px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
     /* identical to box height */
 
 
@@ -51,9 +49,41 @@
     /* Inside auto layout */
 
     flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+    margin-left: 80px;
+}
+
+
+.text-banner1{
+    position: static;
+    width: 751px;
+    height: 26px;
+    left: 0px;
+    top: 77px;
+    
+    font-family: var(--font-family-all);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    
+    /* Preto/branco */
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 8px 0px 0px 55px;
+    margin: 16px 0px;
+
+    margin-left: 80px;
 }
 
 .boton1{
@@ -78,5 +108,6 @@
     flex: none;
     order: 2;
     flex-grow: 0;
-    margin: 10px 0px 0px 50px;
+    margin: 10px 0px 0px 0px;
+    margin-left: 80px;
 }

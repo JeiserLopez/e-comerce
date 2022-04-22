@@ -1,37 +1,55 @@
 .caja{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1% 7%;
-
-    position: static;
-    width: 100%;
-    height: 9%;
-    left: 0px;
-    top: 0px;
-
-    /* Preto/branco */
-
-    background: #FFFFFF;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  
+  position: static;
+  width: 960px;
+  height: 115px;
+  left: 0px;
+  top: 0px;
+  
+  /* Preto/branco */
+  
+  background: #FFFFFF;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+  padding-left: 180px;
 }
 
 .box{
-    margin: 1% auto;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  position: static;
+  width: 415px;
+  height: 40px;
+  left: calc(50% - 393px/2 + 104px);
+  top: 5px;
+  
+  /* Preto/05% */
+  
+  background: #F5F5F5;
+  border-radius: 20px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  flex-grow: 0;
+  margin: 0px 0px;
  }
 
  .container-4{
     overflow: hidden;
-    width: 100%;
+    width: 415px;
     vertical-align: middle;
     white-space: nowrap;
     margin-left: 3%;
@@ -40,7 +58,7 @@
   }
 
   .container-4 input#search{
-    width: 500px;
+    width: 393px;
     height: 50px;
     background: #F5F5F5;
     border: none;
@@ -91,12 +109,12 @@
 .divButton{
     width: 200px;
     height: 34px;
-    margin-left: 600px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;
-    
+    padding-left: 260px;
     position: static;
     left: 0px;
     top: 115px;
@@ -110,7 +128,7 @@
     left: 270px;
     top: 16px;
 
-    font-family: 'Raleway';
+    font-family: var(--font-family-all);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -131,5 +149,5 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 10px 0px 20px;
+    margin: 0px 10px 0px 0px;
   }
