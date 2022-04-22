@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../css/componentes/inputs.css">
         <link rel="stylesheet" href="../css/componentes/botones.css">
         <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/basicos/style_footer.css">
         <link rel="stylesheet" href="../css/componentes/card.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,5 +26,44 @@
         <a href="login.html" class="button">Acceder</a>
       </section>
     </main>
+    <footer>
+      <div class="footer-prin">
+          <div class="footer-logo">
+              <img src="imagenes/control.png" alt=""> 
+              <img src="imagenes/Alura.png" alt=""> 
+              <img src="imagenes/Geek.png" alt=""> 
+          </div>
+          <div class="links_info">
+              <a href="" class="links_info">Quienes Somos</a>
+              <a href="" class="links_info">Política de Privacidad</a>
+              <a href="" class="links_info">Programa de Fidelidad</a>
+              <a href="" class="links_info">Nuestras Tiendas</a>
+              <a href="" class="links_info">Quiero ser Franquiciado</a>
+              <a href="" class="links_info">Anuncie Aquí</a>
+          </div>
+          <div class="form-contacto">
+              <form action="" class="formulario flex flex--column" data-login>
+              <legend class="form__label">Hable con nosotros</legend>
+              <div class="input-container">
+                  <input name="nombre" id="nombre" class="input" type="text" 
+                  placeholder="Nombre" required data-nombre>
+                  <label class="input-label" for="name">Escriba su Nombre</label>
+                  <span class="input-message-error">Este campo no es valido</span>
+              </div>
+              <div class="input-container">
+                  <textarea name="mensaje" id="mensaje" class="textarea" type="text" 
+                  placeholder="Mensaje" required 
+                  data-mensaje></textarea>
+                  <label class="input-label" for="password">Mensaje</label>
+                  <span class="input-message-error">Este campo no es valido</span>
+              </div>
+              <button class="button" id="contacto" href="">Enviar Mensaje</a></button>
+              </form>
+          </div>
+      </div>
+      <div>
+          <p>Desarrollado por Jeiser López - 2022</p>
+      </div>
+  </footer>
   </body>
 </html>
