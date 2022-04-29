@@ -15,6 +15,7 @@
     --font-size-modal-button: 28px;
    
     --width-standard: 1440px;
+    --width-standard-second: 960px;
   
     --primary-color: #2A7AE4;
     --secondary-color: #d6eaff;
@@ -31,3 +32,5 @@
   @media (min-width: 800px) {
     :root {
       --font-size-logo: 56px;
+    }
+  }

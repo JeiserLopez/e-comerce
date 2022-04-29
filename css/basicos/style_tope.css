@@ -5,7 +5,7 @@
   padding: 0px;
   
   position: static;
-  width: 960px;
+  width: var(--width-standard);
   height: 115px;
   left: 0px;
   top: 0px;
@@ -18,34 +18,12 @@
   
   flex: none;
   order: 0;
-  align-self: stretch;
+
   flex-grow: 0;
   margin: 0px 0px;
-  padding-left: 180px;
+  padding-left: 150px;
 }
 
-.box{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 16px;
-  position: static;
-  width: 415px;
-  height: 40px;
-  left: calc(50% - 393px/2 + 104px);
-  top: 5px;
-  
-  /* Preto/05% */
-  
-  background: #F5F5F5;
-  border-radius: 20px;
-  
-  /* Inside auto layout */
-  
-  flex: none;
-  flex-grow: 0;
-  margin: 0px 0px;
- }
 
  .container-4{
     overflow: hidden;
@@ -70,6 +48,7 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    margin-left: 3%;
    
   }
 

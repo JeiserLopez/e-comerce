@@ -95,7 +95,7 @@
     padding: 0px;
 
     position: static;
-    width: 940px;
+    width: var(--width-standard-second);
     height: 190px;
     left: 152px;
     top: 531px;
@@ -133,9 +133,8 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-
+    width: var(--width-standard);
     position: static;
-    width: 1136px;
     height: 130px;
     left: 152px;
     top: 531px;

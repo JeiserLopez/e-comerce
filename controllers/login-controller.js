@@ -15,6 +15,7 @@ const obtenerInfo = async () =>{
         const perfil = await clientService.detalleCliente(email,passw);
         if (perfil){
            const nombre = perfil[0].nombre;
+           sessionStorage.setItem('nombreUsuario', nombre); 
            window.location.href = "../index.html";
         }
         else{
@@ -25,7 +26,6 @@ const obtenerInfo = async () =>{
     }catch(error){
         console.log("Catch error", error)
     }
-
 }
 
 obtenerInfo();

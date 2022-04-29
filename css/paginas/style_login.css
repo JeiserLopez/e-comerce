@@ -3,6 +3,11 @@ body{
     background:#e5e5e5c1 ;
 }
 
+.hiddenButton{
+    visibility: hidden;
+}
+
+
 .caja{
     display: flex;
     flex-direction: row;
@@ -123,3 +128,4 @@ body{
     background: #2A7AE4;
     color: #FFFFFF;
 }
+

@@ -12,7 +12,7 @@
 
     /* imagemhero */
 
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41%, rgba(0, 0, 0, 0.8) 80%), 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41%, rgba(0, 0, 0, 0.8) 100%), 
     url(../../imagenes/banner1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;

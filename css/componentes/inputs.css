@@ -1,13 +1,24 @@
 .formulario {
     margin-top: 2rem;
-    width: 60%;
+    width: 40%; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formulario-generico {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 80%; 
+    align-items: stretch;
+    margin-left: 10%;
   }
   
   .form__label {
     font-size: var(--font-size-form-fieldset);
     margin-bottom: 1rem;
     font-family: var(--font-family-all);
-    margin-left: 20%;
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -19,7 +30,7 @@
     font-size: var(--font-size-form-fieldset);
     margin-bottom: 1rem;
     font-family: var(--font-family-all);
-    margin-left: 380px;
+    margin-left: 515px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -46,10 +57,12 @@
     height: 3.25rem;
     width: 80%;
     font-family: var(--font-family-all);
-    margin-left: 20%;
+    margin-left: 0%;
     border: none;
-    margin-top: 10%;
+    margin-top: 4%;
+    margin-bottom: 1%;
   }
+
   
   .input::placeholder {
     visibility: hidden;
@@ -66,7 +79,7 @@
     left: 0.5rem;
     font-size: var(--font-size-input-label);
     transition: all 0.25s;
-    margin-left: 20%;
+    margin-left: 0%;
     margin-top: 4%;
     font-family: var(--font-family-all);
     font-style: normal;
@@ -112,7 +125,7 @@
     padding: 0.5rem;
     border-radius: 7px;
     width: 100%;
-    min-height: 3rem;
+    min-height: 8rem;
   }
   
   .textarea-container {
@@ -132,6 +145,7 @@
   
   .textarea-label {
     position: absolute;
+    font-family: var(--font-family-all);
     top: 0.5rem;
     left: 0.5rem;
     font-size: var(--font-size-input-label);
@@ -167,4 +181,39 @@
     margin-top: 0.5rem;
     padding-left: 0.5rem;
   }
-  
+
+  .input-file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    font-family: ;
+    position: static;
+    width: 301px;
+    height: 152px;
+    left: 0px;
+    top: 0px;
+
+    /* Preto/branco */
+
+    background: #FFFFFF;
+    /* Preto/30% */
+
+    border: 1px dashed #C8C8C8;
+    box-sizing: border-box;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 8px;
+    
+  }
+
+  .input-file::placeholder{
+    background-image: url(../../imagenes/buscarImg.png);
+    background-repeat: no-repeat;
+  }

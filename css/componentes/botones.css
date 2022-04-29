@@ -1,23 +1,31 @@
 .button {
     display: block;
     background-color: var(--primary-color);
-    border-radius: 7px;
-    width: 60%;
+    width: 40%;
     margin-top: 1rem;
     max-width: 20rem;
     padding: 1.125rem;
-    box-sizing: border-box;
     color: var(--contrast-light-color);
     font-size: var(--font-size-button);
-    align-self: center;
-    text-align: center;
-    margin-left: 40%;
+    font-family: var(--font-family-all);
+    margin-left: 0%;
     margin-top: 12%;
+    align-self: center;
   }
   
   .simple-button {
-    border: none;
-    background-color: unset;
+    display: block;
+    background-color: var(--primary-color);
+    width: 20%;
+    margin-top: 1rem;
+    max-width: 20rem;
+    padding: 1.125rem;
+    color: var(--contrast-light-color);
+    font-size: var(--font-size-button);
+    font-family: var(--font-family-all);
+    margin-left: 70%;
+    margin-top: 0%;
+    align-self: flex-end;
   }
   
   .simple-button--add {

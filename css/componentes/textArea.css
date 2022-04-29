@@ -1,0 +1,20 @@
+.textarea{
+    position: static;
+    width: 560px;
+    height: 82px;
+    left: calc(50% - 560px/2);
+    top: 0px;
+    
+    /* Preto/branco */
+    
+    background: #FFFFFF;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 8px 0px;
+}
