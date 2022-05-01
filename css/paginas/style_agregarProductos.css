@@ -1,0 +1,91 @@
+.div-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: stretch;
+    align-content: space-between;
+}
+
+.input-file{
+    padding: 32px;
+    font-family: var(--font-family-all) ;
+    position: static;
+    width: 40%;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+
+    /* Preto/branco */
+
+    background: #FFFFFF;
+    /* Preto/30% */
+
+    border: 1px dashed #C8C8C8;
+    box-sizing: border-box;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    margin: 0px 8px;
+    
+  }
+
+  .input-file::placeholder{
+    background-image: url(../../imagenes/buscarImg.png);
+    background-repeat: no-repeat;
+  }
+
+.formularioProductos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 60%; 
+    align-items: stretch;
+    margin-left: 10%;
+}
+
+.textProducto{
+    position: static;
+    width: 13px;
+    height: 20px;
+    top: 66px;
+
+    font-family: var(--font-family-all);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    order: 1;
+    flex-grow: 0;
+    margin: 100px 0px;
+}
+
+.textProducto1{
+    position: static;
+    width: 60%;
+    height: 19px;
+    top: 16px;
+
+    font-family: var(--font-family-all);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Azul/100% */
+
+    color: #2A7AE4;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 100px 0px;
+}

@@ -17,5 +17,56 @@
       "password": "Cma1234",
       "id": "853cc57c-f95a-42b1-aed5-646d4e99ab0b"
     }
+  ],
+  "productos": [
+    {
+      "nombreProducto": "jeiser",
+      "rutaImg": "jeser@hotmail.com",
+      "precio": "0",
+      "descripcion": "",
+      "id": "48fd2775-fabf-4d96-affd-0eb6374706f7"
+    },
+    {
+      "id": "9ffe3518-08df-4889-81bb-ca3ee5436d6e",
+      "rutaImg": "C:\\fakepath\\2020-12-18 (1).png",
+      "nombreProducto": "prueba",
+      "precio": "40",
+      "descripcion": "hola producto 1"
+    },
+    {
+      "id": "242c69c6-d828-4540-9cda-d74f98c89193",
+      "rutaImg": "C:\\fakepath\\con1.png",
+      "nombreProducto": "prueba",
+      "precio": "40",
+      "descripcion": "hola producto 1"
+    },
+    {
+      "id": "e478f0da-e672-4b6d-891e-b830b6298bf7",
+      "rutaImg": "C:\\fakepath\\con5.png",
+      "nombreProducto": "prueba",
+      "precio": "40",
+      "descripcion": "hola producto 1"
+    },
+    {
+      "id": "acd2a30a-296c-48a4-89e6-ae635acfcfbf",
+      "rutaImg": "C:\\fakepath\\con5.png",
+      "nombreProducto": "prueba",
+      "precio": "40",
+      "descripcion": "hola producto 1"
+    },
+    {
+      "id": "03c92e09-5126-44cf-945d-83fd9415863a",
+      "rutaImg": "C:\\fakepath\\con5.png",
+      "nombreProducto": "prueba",
+      "precio": "40",
+      "descripcion": "hola producto 1"
+    },
+    {
+      "id": "fdd621fd-9687-4255-b28a-28b8ec20ff27",
+      "rutaImg": "C:\\fakepath\\con5.png",
+      "nombreProducto": "prueba",
+      "precio": "40",
+      "descripcion": "hola producto 1"
+    }
   ]
 }

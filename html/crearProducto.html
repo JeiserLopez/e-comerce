@@ -13,6 +13,7 @@
          <link rel="stylesheet" href="../css/componentes/botones.css">
          <link rel="stylesheet" href="../css/basicos/style_footer.css">
          <link rel="stylesheet" href="../css/variables.css">
+         <link rel="stylesheet" href="../css/paginas/style_agregarProductos.css">
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +37,9 @@
                   });
                   //cerrarSesion.setAttribute('href', "../index.html");
                   div.appendChild(cerrarSesion);
+              }
+              else{
+                window.location.href = "../index.html";
               }
             }
             window.onload = load;
@@ -62,12 +66,40 @@
         </header>
 
         <main>
-            <form action="" class="formulario-generico flex flex--column" data-login>
+            <div class="div-principal">
                 <legend class="form__label">Agregar Nuevo Producto</legend>
-                <div class="input-container">
-                    <input id="foto" type="file" class="input-file" placeholder="hola"/>
-                </div>
-            </form>
+                <form action="" class="formularioProductos flex flex--column" data-productos>
+                    <div class="input-container" style="flex-direction: row;">
+                        <img id="imagenPrevisualizacion" width="100px" height="100px" style="order: 0;visibility: hidden;">
+                        <input placeholder="" id="foto" type="file" class="input-file" 
+                        placeholder="hola" required data-img/>
+                        
+                        <label for="" class="textProducto">O&nbsp;&nbsp;&nbsp;</label>
+                        <label for="" class="textProducto1"> &nbsp;&nbsp;&nbsp;Busque en su Computador</label>
+                    </div>
+                    <div class="input-container">
+                        <input name="nameProducto" id="nameProducto" class="input" type="text" placeholder="Nombre del Producto" 
+                        required data-nombreP>
+                        <label class="input-label" for="nameProducto">Nombre del Producto</label>
+                        <span class="input-message-error">Este campo no es valido</span>                    
+                    </div>
+                    <div class="input-container">
+                        <input name="precioProducto" id="precioProducto" class="input" type="number" placeholder="Precio del Producto" 
+                        required data-precio>
+                        <label class="input-label" for="nameProducto">Precio del Producto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="descripcion" id="descripcion" class="textarea" type="text" 
+                        placeholder="" required 
+                        data-mensaje style="width: 400px;" data-descripcion></textarea>
+                        <label class="textarea-label" for="descripcion">Descripción</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                        <button class="button" id="crearProducto" href="" style="width: 200px;">Agregar Producto</a></button>
+                    </div>
+                </form>        
+            </div>
+           
         </main>
 
         <footer>
@@ -96,7 +128,7 @@
                             </div>
                         <div class="input-container">
                             <textarea name="mensaje" id="mensaje" class="textarea" type="text" 
-                            placeholder="Mensaje" required 
+                            placeholder="" required 
                             data-mensaje style="width: 400px;"></textarea>
                             <label class="textarea-label" for="mensaje">Mensaje</label>
                             <span class="input-message-error">Este campo no es valido</span>
@@ -111,7 +143,10 @@
             </div>
         </footer>
 
-        <script type="module" src="../controllers/login-controller.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script> 
+    <script type="module" src="../controllers/login-controller.js"></script>
     <script src="../js/app.js" type="module"></script>
+    <script src="../js/preImagen.js" type="module"></script>
+    <script type="module" src="../controllers/registroProducto-controller.js"></script>
     </body>
 </html>
