@@ -1,12 +1,12 @@
 
 const listaProductos = () => {
-      return fetch("http://localhost:3000/perfil").then(respuesta =>{
+      return fetch("http://localhost:3000/productos").then(respuesta =>{
           return respuesta.json();
       });
     };
     
-    const crearProductos = (rutaImg,nombreProducto,precio,descripcion) =>{
-      console.log(rutaImg,nombreProducto,precio,descripcion);
+    const crearProductos = (categoria,rutaImg,nombreProducto,precioProducto,descripcion) =>{
+      console.log(categoria,rutaImg,nombreProducto,precioProducto,descripcion);
       return fetch("http://localhost:3000/productos", {
         method: "post",
         headers: {
@@ -16,28 +16,29 @@ const listaProductos = () => {
           id: uuid.v4(),
           rutaImg,
           nombreProducto,
-          precio,
-          descripcion
+          precioProducto,
+          descripcion,
+          categoria
         }),
       });
     }
     
     const eliminarProductos = (id) =>
     {
-      return fetch(`http://localhost:3000/perfil/${id}`, {
+      return fetch(`http://localhost:3000/productos/${id}`, {
         method: "DELETE"
       });
     };
     
     const detalleProductos = (email,passw) => {
       //return fetch("http://localhost:3000/perfil").then((respuesta) =>
-      console.log(`http://localhost:3000/perfil/?email=${email}&password=${passw}`);
-      return fetch(`http://localhost:3000/perfil/?email=${email}&password=${passw}`).then((respuesta) =>
+      console.log(`http://localhost:3000/productos/?email=${email}&password=${passw}`);
+      return fetch(`http://localhost:3000/productos/?email=${email}&password=${passw}`).then((respuesta) =>
       respuesta.json());
     };
     
     const actualizarProductos = (nombre,email,id) =>{
-      return fetch(`http://localhost:3000/perfil/${id}`,{
+      return fetch(`http://localhost:3000/productos/${id}`,{
               method: "PUT",
               headers: {
                 "Content-Type": "application/json"

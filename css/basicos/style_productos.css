@@ -1,4 +1,8 @@
-
+.text-detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .productos-title{
     position: static;
@@ -91,7 +95,7 @@
 .productos-list{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
 
     position: static;
@@ -100,10 +104,7 @@
     left: 152px;
     top: 531px;
 
-
     /* Inside auto layout */
-
-    flex: none;
     order: 1;
     flex-grow: 0;
     margin: 4px 100px 0px ;
@@ -112,7 +113,7 @@
 .img-list{
     padding: 0px 20px 10px 20px;
     position: static;
-    width: 150px;
+    width: 200px;
     height: 150px;
     left: 0px;
     top: 0px;
@@ -122,13 +123,12 @@
     flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 1;
+    flex-grow: 0;
     margin: 8px 0px;
 }
 
 .productos-txt
 {
-    
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -138,8 +138,6 @@
     height: 130px;
     left: 152px;
     top: 531px;
-
-
     /* Inside auto layout */
 
     flex: none;
@@ -152,7 +150,7 @@
    
     padding: 0px 20px 10px 20px;
     position: static;
-    width: 150px;
+    width: 200px;
     height: 10px;
     left: 0px;
     top: 0px;
@@ -208,7 +206,7 @@
 
 .link-prod{
  
-    padding: 0px 20px 10px 20px;
+    padding: 0px 20px 10px 0px;
     position: static;
     width: 150px;
     height: 10px;

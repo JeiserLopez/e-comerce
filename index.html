@@ -21,7 +21,7 @@
          <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">    
          <script src="js/eventos.js"></script>
          <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
          <script>
             function load() {
               //alert(sessionStorage.getItem("nombreUsuario"));
@@ -90,97 +90,29 @@
            <div id="botonAgregar" style="text-align: end;"></div>
 
             <div class="productos-title">
-                <p class="text-prod">Star Wars</p>
+                <p class="text-prod" >Star Wars</p>
                 <a href="" class="links1">Ver todo -></a>
             </div>
-            <div class="productos-list" id="productos-list">
-                <img src="imagenes/img1.png" alt="" class="img-list">
-                <img src="imagenes/img2.png" alt="" class="img-list">
-                <img src="imagenes/img3.png" alt="" class="img-list">
-                <img src="imagenes/img4.png" alt="" class="img-list">
-                <img src="imagenes/img5.png" alt="" class="img-list">
-                <img src="imagenes/img6.png" alt="" class="img-list">
+            <div class="productos-list" id="productos-list" data-star>
                 
             </div>
-           
-            <div class="productos-txt">
-               <div class="text-detalle">
-                    <p class="text-pro">Produto XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Produto XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Produto XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Produto XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Produto XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Produto XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
+            <div class="productos-txt" data-detalleStar>
+             <!--   <div class="text-detalle" >
+                    
+                </div> --> 
             </div>
-
+            
             <div class="productos-title">
                 <p class="text-prod">Consolas</p>
                 <a href="" class="links1">Ver todo -></a>
             </div>
 
-            <div class="productos-list">
-                <img src="imagenes/con1.png" alt="" class="img-list">
-                <img src="imagenes/con2.png" alt="" class="img-list">
-                <img src="imagenes/con6.png" alt="" class="img-list">
-                <img src="imagenes/con4.png" alt="" class="img-list">
-                <img src="imagenes/con5.png" alt="" class="img-list">
-                <img src="imagenes/con3.png" alt="" class="img-list">
+            <div class="productos-list" data-consola>
+              
             </div>
 
-            <div class="productos-txt">
-               <div class="text-detalle">
-                    <p class="text-pro">Control XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Control y Consola XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Consola XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Control XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Consola XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Game Boy Color XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>-->
+            <div class="productos-txt" data-detalleConsola>
+               
             </div>
 
             <div class="productos-title">
@@ -188,46 +120,12 @@
                 <a href="" class="links1">Ver todo -></a>
             </div>
 
-            <div class="productos-list">
-                <img src="imagenes/div.png" alt="" class="img-list">
-                <img src="imagenes/div6.png" alt="" class="img-list">
-                <img src="imagenes/div5.png" alt="" class="img-list">
-                <img src="imagenes/div4.png" alt="" class="img-list">
-                <img src="imagenes/div3.png" alt="" class="img-list">
-                <img src="imagenes/div2.png" alt="" class="img-list">
+            <div class="productos-list" data-diversos>
+                
             </div>
 
-            <div class="productos-txt">
-               <div class="text-detalle">
-                    <p class="text-pro">Camisa Atari</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Camisa SNES</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Control y Consola XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Control y Consola XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Control y Consola XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
-                <div class="text-detalle">
-                    <p class="text-pro">Producto XYZ</p>
-                    <p class="precio-prod">$60,00</p>
-                    <a href="" class="link-prod">Ver Producto</a>
-                </div>
+            <div class="productos-txt" data-detallediversos>
+               
             </div>
 
         </main>
@@ -272,6 +170,8 @@
             </div>
         </footer>
         <input hidden id="sessionName">
+        <script type="module" src="controllers/detalleProducto-controller.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
     </body>
 
 </html>

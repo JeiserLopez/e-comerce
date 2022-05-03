@@ -69,10 +69,18 @@
             <div class="div-principal">
                 <legend class="form__label">Agregar Nuevo Producto</legend>
                 <form action="" class="formularioProductos flex flex--column" data-productos>
+                    <div class="input-container">
+                        <label class="form__label">Categorias: </label>
+                        <select id="categorias" data-categoria required>
+                          <option value="starwars">Star Wars</option>
+                          <option value="consolas">Consolas</option>
+                          <option value="diversos">Diversos</option>
+                        </select> 
+                    </div>
                     <div class="input-container" style="flex-direction: row;">
                         <img id="imagenPrevisualizacion" width="100px" height="100px" style="order: 0;visibility: hidden;">
                         <input placeholder="" id="foto" type="file" class="input-file" 
-                        placeholder="hola" required data-img/>
+                        placeholder="hola" required accept="image/png, .jpeg, .jpg" data-img/>
                         
                         <label for="" class="textProducto">O&nbsp;&nbsp;&nbsp;</label>
                         <label for="" class="textProducto1"> &nbsp;&nbsp;&nbsp;Busque en su Computador</label>
@@ -85,14 +93,14 @@
                     </div>
                     <div class="input-container">
                         <input name="precioProducto" id="precioProducto" class="input" type="number" placeholder="Precio del Producto" 
-                        required data-precio>
+                        required min="1" pattern="^[0-9]+" data-precio>
                         <label class="input-label" for="nameProducto">Precio del Producto</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
                         <textarea name="descripcion" id="descripcion" class="textarea" type="text" 
                         placeholder="" required 
-                        data-mensaje style="width: 400px;" data-descripcion></textarea>
+                        data-mensaje style="width: 400px;" minlength="10" data-descripcion></textarea>
                         <label class="textarea-label" for="descripcion">Descripción</label>
                         <span class="input-message-error">Este campo no es valido</span>
                         <button class="button" id="crearProducto" href="" style="width: 200px;">Agregar Producto</a></button>

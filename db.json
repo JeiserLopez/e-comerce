@@ -20,53 +20,36 @@
   ],
   "productos": [
     {
-      "nombreProducto": "jeiser",
-      "rutaImg": "jeser@hotmail.com",
-      "precio": "0",
-      "descripcion": "",
-      "id": "48fd2775-fabf-4d96-affd-0eb6374706f7"
+      "id": "eb6bf6c1-c0c9-4be9-85ee-ea44853eda2d",
+      "rutaImg": "imagenes/con4.png",
+      "nombreProducto": "control",
+      "precioProducto": "12",
+      "descripcion": "prueba control",
+      "categoria": "starwars"
     },
     {
-      "id": "9ffe3518-08df-4889-81bb-ca3ee5436d6e",
-      "rutaImg": "C:\\fakepath\\2020-12-18 (1).png",
-      "nombreProducto": "prueba",
-      "precio": "40",
-      "descripcion": "hola producto 1"
+      "id": "7824e36e-a76a-42aa-a892-fb05973f3225",
+      "rutaImg": "imagenes/img1.png",
+      "nombreProducto": "prueba 2",
+      "precioProducto": "30",
+      "descripcion": "prueba 2 img",
+      "categoria": "starwars"
     },
     {
-      "id": "242c69c6-d828-4540-9cda-d74f98c89193",
-      "rutaImg": "C:\\fakepath\\con1.png",
-      "nombreProducto": "prueba",
-      "precio": "40",
-      "descripcion": "hola producto 1"
+      "id": "1446610d-c029-47a8-a7bb-941325837a9c",
+      "rutaImg": "imagenes/con2.png",
+      "nombreProducto": "prueba consola 1",
+      "precioProducto": "40",
+      "descripcion": "prueba consola",
+      "categoria": "consolas"
     },
     {
-      "id": "e478f0da-e672-4b6d-891e-b830b6298bf7",
-      "rutaImg": "C:\\fakepath\\con5.png",
-      "nombreProducto": "prueba",
-      "precio": "40",
-      "descripcion": "hola producto 1"
-    },
-    {
-      "id": "acd2a30a-296c-48a4-89e6-ae635acfcfbf",
-      "rutaImg": "C:\\fakepath\\con5.png",
-      "nombreProducto": "prueba",
-      "precio": "40",
-      "descripcion": "hola producto 1"
-    },
-    {
-      "id": "03c92e09-5126-44cf-945d-83fd9415863a",
-      "rutaImg": "C:\\fakepath\\con5.png",
-      "nombreProducto": "prueba",
-      "precio": "40",
-      "descripcion": "hola producto 1"
-    },
-    {
-      "id": "fdd621fd-9687-4255-b28a-28b8ec20ff27",
-      "rutaImg": "C:\\fakepath\\con5.png",
-      "nombreProducto": "prueba",
-      "precio": "40",
-      "descripcion": "hola producto 1"
+      "id": "ce4eb846-30bc-4e24-a0de-741e6e870189",
+      "rutaImg": "imagenes/div5.png",
+      "nombreProducto": "sonic prueba",
+      "precioProducto": "30",
+      "descripcion": "sonic prueba diversos",
+      "categoria": "diversos"
     }
   ]
 }
