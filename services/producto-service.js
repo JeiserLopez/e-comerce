@@ -1,9 +1,10 @@
 
 const listaProductos = () => {
       return fetch("http://localhost:3000/productos").then(respuesta =>{
-          return respuesta.json();
+      return respuesta.json();
       });
     };
+
     
     const crearProductos = (categoria,rutaImg,nombreProducto,precioProducto,descripcion) =>{
       console.log(categoria,rutaImg,nombreProducto,precioProducto,descripcion);
@@ -29,12 +30,11 @@ const listaProductos = () => {
         method: "DELETE"
       });
     };
-    
-    const detalleProductos = (email,passw) => {
-      //return fetch("http://localhost:3000/perfil").then((respuesta) =>
-      console.log(`http://localhost:3000/productos/?email=${email}&password=${passw}`);
-      return fetch(`http://localhost:3000/productos/?email=${email}&password=${passw}`).then((respuesta) =>
-      respuesta.json());
+
+    const detalleProducto = (id) => {
+      console.log(`http://localhost:3000/productos/${id}`);
+      return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) =>
+       respuesta.json());
     };
     
     const actualizarProductos = (nombre,email,id) =>{
@@ -55,7 +55,7 @@ const listaProductos = () => {
       listaProductos,
       crearProductos,
       eliminarProductos,
-      detalleProductos,
+      detalleProducto,
       actualizarProductos,
     }
     

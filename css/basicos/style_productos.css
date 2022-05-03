@@ -236,3 +236,59 @@
 .form-contacto{
     width: 200px;
 }
+
+.div-detalles{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    position: static;
+    width: 100%;
+    height: 403px;
+    left: 0px;
+    top: 0px;
+    background-color: var(--contrast-light-color) ;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+.img-detalle{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.prod-similares{
+    position: static;
+    width: 500px;
+    height: 38px;
+    margin-left: 100px;
+    top: 0px;
+
+    font-family: var(--font-family-all);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+
+
+    /* Preto/100% */
+
+    background-color: var(--contrast-light-color) ;
+
+
+}
+
+.detalles{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: var(--contrast-light-color) ;
+  }
