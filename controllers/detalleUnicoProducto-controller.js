@@ -35,7 +35,7 @@ import { productoService } from "../services/producto-service.js";
                 descripcionProducto.classList.add("text-pro1");
 
                 const precioProducto = document.createElement("p");
-                precioProducto.innerText = "$"+detalle.precioProducto;
+                precioProducto.innerText = "$ "+detalle.precioProducto;
                 precioProducto.classList.add("precio-prod");
 
                 divDetalle.appendChild(nombreProducto);
@@ -71,16 +71,16 @@ import { productoService } from "../services/producto-service.js";
                     precio.classList.add("precio-prod");
                     precio.textContent = "$ " + detalles.precioProducto;
                     
-                    const link = document.createElement("a");
-                    link.setAttribute("href",`verDetalleProducto.html?id=${detalles.id}&categoria=${detalles.categoria}`);
-                    link.setAttribute("id",detalles.id);
-                    link.innerHTML = "Ver Producto "
-                    link.classList.add("link-prod");
+                    const linkSimilares = document.createElement("a");
+                    linkSimilares.setAttribute("href",`verDetalleProducto.html?id=${detalles.id}&categoria=${detalles.categoria}`);
+                    linkSimilares.setAttribute("id",detalles.id);
+                    linkSimilares.innerHTML = "Ver Producto "
+                    linkSimilares.classList.add("link-prod");
 
                     divDetalles.appendChild(imagen);
                     divDetalles.appendChild(parrafo);
                     divDetalles.appendChild(precio);
-                    divDetalles.appendChild(link);
+                    divDetalles.appendChild(linkSimilares);
 
                     divpadre.appendChild(divDetalles);
                });
