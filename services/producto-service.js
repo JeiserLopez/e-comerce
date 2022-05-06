@@ -1,6 +1,11 @@
 
 const listaProductos = () => {
-      return fetch("http://localhost:3000/productos").then(respuesta =>{
+      return fetch("http://localhost:3000/productos",
+     {
+        method: "GET",
+        headers: {"Content-type": "application/json;charset=UTF-8"}
+
+     }).then(respuesta =>{
       return respuesta.json();
       });
     };
@@ -13,7 +18,7 @@ const listaProductos = () => {
       return fetch("http://localhost:3000/productos", {
         method: "post",
         headers: {
-          "Content-type": "application/json"
+          "Content-type": "application/json; charset=UTF-8"
         },
         body: JSON.stringify({
           id: uuid.v4(),

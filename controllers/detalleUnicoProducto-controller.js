@@ -72,7 +72,7 @@ import { productoService } from "../services/producto-service.js";
                     precio.textContent = "$ " + detalles.precioProducto;
                     
                     const link = document.createElement("a");
-                    link.setAttribute("href",`/html/verDetalleProducto.html?id=${detalles.id}&categoria=${detalles.categoria}`);
+                    link.setAttribute("href",`../html/verDetalleProducto.html?id=${detalles.id}&categoria=${detalles.categoria}`);
                     link.setAttribute("id",detalles.id);
                     link.innerHTML = "Ver Producto "
                     link.classList.add("link-prod");

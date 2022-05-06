@@ -25,7 +25,7 @@
       "nombreProducto": "prueba 2",
       "precioProducto": "30",
       "descripcion": "Taza esculpida personalizada Fabricado con cerámica de alta calidad Diseño llamativo y brillante Se envía en una caja de regalo a todo color Regalo ideal para los fans",
-      "categoria": "StarWsars"
+      "categoria": "StarWars"
     },
     {
       "id": "1446610d-c029-47a8-a7bb-941325837a9c",
@@ -50,6 +50,14 @@
       "precioProducto": "45",
       "descripcion": "pruebs",
       "categoria": "Diversos"
+    },
+    {
+      "id": "8ab18d5e-0998-45c6-ac06-200bc260c61c",
+      "rutaImg": "imagenes/con3.png",
+      "nombreProducto": "prueba",
+      "precioProducto": "60",
+      "descripcion": "prueba desde la web",
+      "categoria": "Consolas"
     }
   ]
 }
