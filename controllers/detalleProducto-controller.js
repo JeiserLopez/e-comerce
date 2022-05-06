@@ -101,6 +101,7 @@ productoService.listaProductos()
         precio.classList.add("precio-prod");
         precio.textContent = precioProducto;
         
+        
         const link = document.createElement("a");
         link.setAttribute("href",`html/verDetalleProducto.html?id=${id}&categoria=${categoria}`);
         link.setAttribute("id",id);
