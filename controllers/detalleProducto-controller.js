@@ -102,7 +102,7 @@ productoService.listaProductos()
         precio.textContent = precioProducto;
         
         const link = document.createElement("a");
-        link.setAttribute("href",`/html/verDetalleProducto.html?id=${id}&categoria=${categoria}`);
+        link.setAttribute("href",`html/verDetalleProducto.html?id=${id}&categoria=${categoria}`);
         link.setAttribute("id",id);
         link.innerHTML = "Ver Producto "
         link.classList.add("link-prod");
