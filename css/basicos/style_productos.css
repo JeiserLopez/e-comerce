@@ -9,7 +9,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    width: 148px;
+    width: 248px;
     height: 38px;
     left: 0px;
     top: 0px;
@@ -32,7 +32,8 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 50px 80px;
+    margin: 20px 80px;
+    margin-bottom: 40px;
     
 }
 
@@ -174,6 +175,35 @@
 
 }
 
+.text-pro1{
+   
+    padding: 0px 20px 10px 20px;
+    position: static;
+    width: 500px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    font-family: var(--font-family-all);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* Preto/100% */
+
+    color: #464646;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+
 .precio-prod{
     
     padding: 0px 20px 10px 20px;
@@ -275,12 +305,6 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    /* identical to box height */
-
-
-    /* Preto/100% */
-
-    background-color: var(--contrast-light-color) ;
 
 
 }

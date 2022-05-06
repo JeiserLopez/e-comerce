@@ -8,32 +8,49 @@ const crearNuevaProducto = (categoria,rutaImg, nombreProducto,precioProducto,des
     const linea = document.createElement("img");
     linea.setAttribute("src", rutaImg);
     linea.classList.add("img-list");
-   // console.log(linea);
-    //console.log(dataElementImg);
-    //console.log(divpadre);
-    //console.log(document.querySelector("["+dataElementImg+"]"));
-   // divPadre.appendChild(linea);
- 
-   /* linea.innerHTML = contenido;
-   // const btn = linea.querySelector("button");
-    //btn.addEventListener("click", () => {
-      const idbtn = btn.id;
-      clientService.eliminarCliente(idbtn).then(respuesta =>{
-        window.location.href = "eliminacion_concluida.html";
-    }).catch (err => window.location.href = "error.html");
+    if(sessionStorage.getItem("nombreUsuario") != null){
+          const btnEliminar = document.createElement("button");
+        btnEliminar.setAttribute("id", id);
+        btnEliminar.innerText = "Eliminar";
+        btnEliminar.classList.add("simple-button-crud","simple-button--delete");
 
-    });*/
-    //console.log(divpadre);
-    return linea;
+        const btnEditar = document.createElement("a");
+        btnEditar.setAttribute("href",`../html/editar_producto.html?id=${id}`);
+        btnEditar.innerText = "Editar";
+        btnEditar.classList.add("simple-button-crud","simple-button--edit");
+
+
+        const divImgBtn = document.createElement("div");
+        divImgBtn.appendChild(linea);
+        divImgBtn.appendChild(btnEliminar);
+        divImgBtn.appendChild(btnEditar);
+
+        const btn = divImgBtn.querySelector("button");
+        console.log(btn);
+        btn.addEventListener("click", () => {
+          const idbtn = btn.id;
+          alert(idbtn);
+          productoService.eliminarProductos(idbtn).then(respuesta =>{
+            window.location.href = "../html/eliminacionConcluida.html";
+        }).catch (err => window.location.href = "../html/error.html");
+
+        });
+        return divImgBtn;
+    }
+    else{
+      return linea;
+    }
+    
+
   };
   
 productoService.listaProductos()
   .then((data) => {
     data.forEach(({categoria,rutaImg,nombreProducto,precioProducto,descripcion,id}) => {
-      const nuevaLinea = crearNuevaProducto(categoria,rutaImg,nombreProducto,precioProducto,descripcion);
+      const nuevaLinea = crearNuevaProducto(categoria,rutaImg,nombreProducto,precioProducto,descripcion,id);
       //divPadre.appendChild(nuevaLinea);
-      console.log(id);
-      if (categoria == "starwars"){
+      console.log(sessionStorage.getItem("nombreUsuario"));
+      if (categoria == "StarWars"){
         dataElementImg = "data-star"
         dataElementDetalle = "data-detalleStar";
         const divpadre = document.querySelector("["+dataElementImg+"]");
@@ -66,7 +83,7 @@ productoService.listaProductos()
         divpadre.appendChild(nuevaLinea);
       }
 
-      if (categoria == "consolas"){
+      if (categoria == "Consolas"){
         dataElementImg = "data-consola"
         dataElementDetalle = "data-detalleConsola";
         const divpadre = document.querySelector("["+dataElementImg+"]");
@@ -99,7 +116,7 @@ productoService.listaProductos()
         divpadre.appendChild(nuevaLinea);
       }
 
-      if (categoria == "diversos"){
+      if (categoria == "Diversos"){
         dataElementImg = "data-diversos"
         dataElementDetalle = "data-detallediversos";
         const divpadre = document.querySelector("["+dataElementImg+"]");

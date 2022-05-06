@@ -20,28 +20,20 @@
   ],
   "productos": [
     {
-      "id": "eb6bf6c1-c0c9-4be9-85ee-ea44853eda2d",
-      "rutaImg": "imagenes/con4.png",
-      "nombreProducto": "control",
-      "precioProducto": "12",
-      "descripcion": "prueba control",
-      "categoria": "starwars"
-    },
-    {
       "id": "7824e36e-a76a-42aa-a892-fb05973f3225",
       "rutaImg": "imagenes/img1.png",
       "nombreProducto": "prueba 2",
       "precioProducto": "30",
-      "descripcion": "prueba 2 img",
-      "categoria": "starwars"
+      "descripcion": "Taza esculpida personalizada Fabricado con cerámica de alta calidad Diseño llamativo y brillante Se envía en una caja de regalo a todo color Regalo ideal para los fans",
+      "categoria": "StarWsars"
     },
     {
       "id": "1446610d-c029-47a8-a7bb-941325837a9c",
       "rutaImg": "imagenes/con2.png",
       "nombreProducto": "prueba consola 1",
       "precioProducto": "40",
-      "descripcion": "prueba consola",
-      "categoria": "consolas"
+      "descripcion": "La CPU de PlayStation 5 incorpora 8 núcleos diseñados para trabajar a una frecuencia de reloj variable de hasta 3,5 GHz, y se afianza sobre la microarquitectura Zen 2 de AMD",
+      "categoria": "Consolas"
     },
     {
       "id": "ce4eb846-30bc-4e24-a0de-741e6e870189",
@@ -49,7 +41,15 @@
       "nombreProducto": "sonic prueba",
       "precioProducto": "30",
       "descripcion": "sonic prueba diversos",
-      "categoria": "diversos"
+      "categoria": "Diversos"
+    },
+    {
+      "id": "b64748bd-00eb-45ee-b8bc-c0a894661a56",
+      "rutaImg": "imagenes/div2.png",
+      "nombreProducto": "sadsadsad",
+      "precioProducto": "45",
+      "descripcion": "pruebs",
+      "categoria": "Diversos"
     }
   ]
 }

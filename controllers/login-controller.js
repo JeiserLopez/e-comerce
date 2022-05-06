@@ -16,6 +16,8 @@ const obtenerInfo = async () =>{
         if (perfil){
            const nombre = perfil[0].nombre;
            sessionStorage.setItem('nombreUsuario', nombre); 
+
+           
            window.location.href = "../index.html";
         }
         else{

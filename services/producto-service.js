@@ -8,6 +8,8 @@ const listaProductos = () => {
     
     const crearProductos = (categoria,rutaImg,nombreProducto,precioProducto,descripcion) =>{
       console.log(categoria,rutaImg,nombreProducto,precioProducto,descripcion);
+     // rutaImg = subirImagen();
+      //alert(rutaImg.value);
       return fetch("http://localhost:3000/productos", {
         method: "post",
         headers: {
@@ -23,6 +25,15 @@ const listaProductos = () => {
         }),
       });
     }
+
+    const subirImagen = () => {
+        let data = new FormData(); 
+        let entry = document.getElementById("foto").files[0];
+        data.append("file",entry) ;
+        alert(data);
+        alert('doupload'+ entry.name+data);
+        return fetch('../imagenes/uploads/' + encodeURIComponent(entry.name), {method:'POST',body:data});
+    }
     
     const eliminarProductos = (id) =>
     {
@@ -36,6 +47,13 @@ const listaProductos = () => {
       return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) =>
        respuesta.json());
     };
+
+    const detalleProductoCategoria = (categoria) => {
+      console.log(`http://localhost:3000/productos/?categoria=${categoria}`);
+      return fetch(`http://localhost:3000/productos/?categoria=${categoria}`).then((respuesta) =>
+       respuesta.json());
+    };
+    
     
     const actualizarProductos = (nombre,email,id) =>{
       return fetch(`http://localhost:3000/productos/${id}`,{
@@ -57,5 +75,6 @@ const listaProductos = () => {
       eliminarProductos,
       detalleProducto,
       actualizarProductos,
+      detalleProductoCategoria
     }
     

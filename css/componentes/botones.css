@@ -39,4 +39,16 @@
   .simple-button--edit {
     color: var(--success-color);
   }
+
+  .simple-button-crud {
+    border: none;
+    background-color: unset;
+  }
   
+  .simple-button--delete {
+    color: var(--warning-color);
+  }
+  
+  .simple-button--edit {
+    color: var(--sucess-color);
+  }
